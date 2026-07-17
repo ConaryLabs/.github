@@ -4,14 +4,19 @@ Built by [Peter Permenter](https://github.com/TusanHomichi) — a systems engine
 
 ### Projects
 
-**[Conary](https://github.com/ConaryLabs/Conary)** — Cross-distribution Linux package manager\
-SAT-based dependency resolution, content-addressable storage, hermetic builds, and immutable system generations via EROFS + composefs. 190K+ lines of Rust, 2,600+ unit tests, 249 integration tests across Fedora, Ubuntu, and Arch. Production server at [packages.conary.io](https://packages.conary.io) converting 68,000+ upstream packages on the fly.
+**[Conary](https://github.com/ConaryLabs/Conary)** — Early Linux package-manager preview
 
-**[Timeshift](https://github.com/ConaryLabs/Timeshift)** — Shift scheduling for 911 dispatch centers\
-Full-stack Rust/Axum + React/TypeScript. Multi-tenant PostgreSQL with seniority-based overtime queues, union contract rules, multi-round vacation bidding, and 26 leave types. Built from domain expertise at Valley Communications Center (King County, WA — 14 cities).
+Conary is an adoption-led Rust package manager for Fedora 44, Ubuntu 26.04 LTS, and Arch Linux on x86_64. It can install converted packages, track packages already owned by the native package manager, and unadopt them without silently taking authority. The current public test is deliberately limited to disposable, snapshotted, or non-critical hosts.
 
-**[Mira](https://github.com/ConaryLabs/Mira)** — AI code intelligence MCP server\
-Persistent memory and semantic code search for Claude Code via Tree-sitter and SQLite. Archived after core features were adopted natively by upstream platforms.
+The maintainer-operated [Remi service](https://remi.conary.io) converts supported upstream packages on demand. Package conversion and scriptlet support are still conservative preview surfaces, not production-service claims.
+
+**[Timeshift](https://github.com/ConaryLabs/Timeshift)** — Shift scheduling for 911 dispatch centers
+
+Full-stack Rust/Axum + React/TypeScript. Multi-tenant PostgreSQL with seniority-based overtime queues, union contract rules, multi-round vacation bidding, and leave management.
+
+**[Mira](https://github.com/ConaryLabs/Mira)** — AI code intelligence MCP server
+
+Persistent memory and semantic code search via Tree-sitter and SQLite. Archived after core features were adopted natively by upstream platforms.
 
 ### Stack
 
