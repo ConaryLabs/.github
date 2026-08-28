@@ -1,12 +1,14 @@
-# Conary Labs
+# Fieldmouse Works
 
-Open-source systems software, durable local-first applications, and experimental game technology in Rust.
+**Open tools for closed systems.**
 
-Built by [Peter Permenter](https://github.com/TusanHomichi), a systems and backend engineer focused on explicit state, reproducible behavior, recovery, and software that remains operable without a permanent vendor relationship.
+Fieldmouse Works builds open-source software for ecosystems that are expensive, restrictive, difficult to leave, or designed around permanent vendor dependence. The goal is practical: users should be able to run the software, understand it, move their data, and keep operating on their own terms.
+
+Built by [Peter Permenter](https://github.com/TusanHomichi), a systems and backend engineer focused on explicit state, reproducible behavior, recovery, portability, and software that remains operable without a permanent vendor relationship.
 
 ## Current projects
 
-### [Conary](https://github.com/ConaryLabs/Conary)
+### [Conary](https://github.com/FieldmouseWorks/Conary)
 
 A cross-distro Linux package manager that installs RPM, DEB, and Arch packages across Fedora, Ubuntu, and Arch while preserving each format's lifecycle semantics.
 
@@ -14,26 +16,22 @@ Conary runs those formats through one atomic, content-addressed transaction mode
 
 **Status:** early preview; use a VM or non-critical host.
 
-### [Nomos](https://github.com/ConaryLabs/nomos)
-
-A semantic game runtime designed for AI authors. Typed facts and capabilities define the world; deterministic projections, sealed state transitions, replay, and explanations define what the runtime may do.
-
-**Status:** active runtime research. [Open the browser viewer](https://conarylabs.github.io/nomos/).
-
-### [The Mortal Estate](https://github.com/ConaryLabs/the-mortal-estate)
-
-An original persistent online tactical role-playing game about life, death, inheritance, memory, and a world whose former characters remain part of its history.
-
-**Status:** public clean-source repository, pre-release, under construction.
-
-### [Consolebook](https://github.com/ConaryLabs/consolebook)
+### [Consolebook](https://github.com/FieldmouseWorks/consolebook)
 
 Self-hosted training-record software for emergency communications, designed around versioned programs, immutable finalized records, acknowledgments, lawful disposition, recovery, and portable exports.
 
+Consolebook is intended as an open alternative to closed public-safety training and employee-record systems, with agency-owned data and self-hosting as first-class requirements.
+
 **Status:** pre-alpha design and buildable scaffold.
+
+## Supporting work
+
+Additional repositories contain supporting libraries and archived experiments used by the projects above.
+
+## About the name
+
+Fieldmouse Works is named for the small creature willing to take on something much larger than itself. That is a useful model for the work here: find the closed system, understand what it actually does, and build the open door.
 
 ## Contact
 
-Project documentation and contribution routes live in each repository.
-
-For work or private contact: [peter@conary.io](mailto:peter@conary.io) · [conary.io/contact](https://conary.io/contact/)
+Project documentation and contribution routes live in each repository. For the person behind the work, see [Peter's GitHub profile](https://github.com/TusanHomichi).
