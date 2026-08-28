@@ -1,23 +1,39 @@
-## Systems software in Rust.
+# Conary Labs
 
-Built by [Peter Permenter](https://github.com/TusanHomichi) — a systems engineer focused on package management, backend architecture, and Linux internals.
+Open-source systems software, durable local-first applications, and experimental game technology in Rust.
 
-### Projects
+Built by [Peter Permenter](https://github.com/TusanHomichi), a systems and backend engineer focused on explicit state, reproducible behavior, recovery, and software that remains operable without a permanent vendor relationship.
 
-**[Conary](https://github.com/ConaryLabs/Conary)** — Early Linux package-manager preview
+## Current projects
 
-Conary is an adoption-led Rust package manager for Fedora 44, Ubuntu 26.04 LTS, and Arch Linux on x86_64. It can install converted packages, track packages already owned by the native package manager, and unadopt them without silently taking authority. The current public test is deliberately limited to disposable, snapshotted, or non-critical hosts.
+### [Conary](https://github.com/ConaryLabs/Conary)
 
-The maintainer-operated [Remi service](https://remi.conary.io) converts supported upstream packages on demand. Package conversion and scriptlet support are still conservative preview surfaces, not production-service claims.
+A cross-distro Linux package manager that installs RPM, DEB, and Arch packages across Fedora, Ubuntu, and Arch while preserving each format's lifecycle semantics.
 
-**[Timeshift](https://github.com/ConaryLabs/Timeshift)** — Shift scheduling for 911 dispatch centers
+Conary runs those formats through one atomic, content-addressed transaction model with history, rollback, and immutable system generations. The maintainer-operated [Remi service](https://remi.conary.io) provides package conversion and metadata.
 
-Full-stack Rust/Axum + React/TypeScript. Multi-tenant PostgreSQL with seniority-based overtime queues, union contract rules, multi-round vacation bidding, and leave management.
+**Status:** early preview; use a VM or non-critical host.
 
-**[Mira](https://github.com/ConaryLabs/Mira)** — AI code intelligence MCP server
+### [Nomos](https://github.com/ConaryLabs/nomos)
 
-Persistent memory and semantic code search via Tree-sitter and SQLite. Archived after core features were adopted natively by upstream platforms.
+A semantic game runtime designed for AI authors. Typed facts and capabilities define the world; deterministic projections, sealed state transitions, replay, and explanations define what the runtime may do.
 
-### Stack
+**Status:** active runtime research. [Open the browser viewer](https://conarylabs.github.io/nomos/).
 
-Rust · Axum · Tokio · SQLite · PostgreSQL · React · TypeScript · Linux · EROFS · Ed25519 · Tree-sitter
+### [The Mortal Estate](https://github.com/ConaryLabs/the-mortal-estate)
+
+An original persistent online tactical role-playing game about life, death, inheritance, memory, and a world whose former characters remain part of its history.
+
+**Status:** public clean-source repository, pre-release, under construction.
+
+### [Consolebook](https://github.com/ConaryLabs/consolebook)
+
+Self-hosted training-record software for emergency communications, designed around versioned programs, immutable finalized records, acknowledgments, lawful disposition, recovery, and portable exports.
+
+**Status:** pre-alpha design and buildable scaffold.
+
+## Contact
+
+Project documentation and contribution routes live in each repository.
+
+For work or private contact: [peter@conary.io](mailto:peter@conary.io) · [conary.io/contact](https://conary.io/contact/)
